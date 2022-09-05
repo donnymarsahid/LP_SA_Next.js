@@ -3,6 +3,8 @@ import Image from "next/image";
 
 export const Logo: React.FC = () => {
   return (
-    <Image src="/icons/nextjs-icon.svg" alt="nextjs" width="96" height="58" />
+    <a href="/">
+      <Image src="/icons/logo-sa.svg" alt="nextjs" width="45" height="36" />
+    </a>
   );
 };
