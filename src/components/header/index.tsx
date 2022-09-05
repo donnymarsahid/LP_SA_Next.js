@@ -6,11 +6,15 @@ export const Header: React.FC = () => {
   const [scroll, setScroll] = useState<boolean>(false)
 
   useEffect(() => {
+    _conditionScroll()
+  }, []);
+
+  const _conditionScroll = () => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) setScroll(true);
       else setScroll(false);
     });
-  }, []);
+  }
 
   return (
     <div className={`fixed top-0 left-0 right-0 ${scroll ? 'shadow-md' : ''}`}>
