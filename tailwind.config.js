@@ -2,15 +2,6 @@ module.exports = {
   purge: ["./pages/**/*.tsx", "./src/**/*.tsx"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      'primary': '#E7583C',
-      'primary-dark': '#C9513A',
-      'white': '#FFFFFF',
-      'disabled': '#B5B8C2',
-      'dark': '#0A0E0E',
-      'mute': '#8D8D8D',
-      'background': '#F8F7F3',
-    },
     extend: {
       height: {
         '700px': '700px',
@@ -24,6 +15,15 @@ module.exports = {
         '18px': '18px',
         '12px': '12px',
         'xs': '.75rem'
+      },
+      colors: {
+        'primary': '#E7583C',
+        'primary-dark': '#C9513A',
+        'white': '#FFFFFF',
+        'disabled': '#B5B8C2',
+        'dark': '#0A0E0E',
+        'mute': '#8D8D8D',
+        'background': '#F8F7F3',
       },
     },
     screens: {
