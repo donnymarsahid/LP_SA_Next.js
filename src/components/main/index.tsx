@@ -6,7 +6,6 @@ import { Button } from "@components";
 import { useDispatch, useSelector } from "react-redux";
 import { decrease, increase } from "@redux/actions";
 import { useRouter } from "next/router";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"
 
@@ -32,37 +31,43 @@ export const Main: React.FC = () => {
 
 
   return (
-    <div className="bg-background">
+    <div className="bg-background" style={{ backgroundColor: 'wheat' }}>
       <div className="w-full h-700px bg-no-repeat bg-cover" style={{ backgroundImage: `url('/assets/img/bg-header.png')` }}>
-        <div className="container mx-auto flex justify-between pt-20 " >
-          <div className="w-2/4  flex items-center">
+        <div className="container mx-auto flex justify-between lg:w-11/12 pt-20" >
+          <div className="flex items-center lg:p-0 md:w-96 lg:w-6/12  md:p-16">
             <div className="content">
-              <h1 className="text-4xl font-bold text-dark">Social Media Academy</h1>
-              <h3 className="text-2xl font-medium text-dark mt-3">Berkarir Sebagai Konten Kreator
-                <br /> Di Semua Platform.</h3>
-              <p className="text-mute text-sm mt-35px">Teknologilah yang bisa memberikan dampak sosial terbesar
+              <h1 className="text-4xl md:text-22px font-bold text-dark">Social Media Academy</h1>
+              <h3 className="text-2xl md:text-18px font-medium text-dark mt-3">Berkarir Sebagai Konten Kreator
+                Di Semua Platform.</h3>
+              <p className="text-mute text-sm mt-35px md:text-12px">Teknologilah yang bisa memberikan dampak sosial terbesar
                 di negara ini, bukan kebijakan atau policy.    - Nadiem Makarim</p>
-              <div className="c-button mt-28px">
-                <Button className="bg-primary mr-2 hover:bg-primary-dark text-white px-5 py-1 rounded border-2 border-primary duration-75">
+              <div className="c-button mt-28px md:flex ">
+                <Button className="bg-primary mr-2 md:text-12px hover:bg-primary-dark text-white px-5 md:px-3 py-1 rounded border-2 border-primary duration-75">
                   Daftar Sekarang
                 </Button>
-                <Button className="px-5 py-1 rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
+                <Button className="px-5 md:px-3 py-1  md:text-12px rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
                   Selengkapnya
                 </Button>
               </div>
             </div>
           </div>
-          <Image src="/assets/img/bg-img.png" alt="nextjs" width="520" height="520" />
+          {/* <Image src="/assets/img/bg-img.png" alt="nextjs" width="520" height="520" /> */}
+          <div className="content-image md:w-96 lg:w-6/12 flex justify-between">
+            <span></span>
+            <div className="p-16">
+              <img src={"/assets/img/bg-img.png"} className="w-full" alt="..." />
+            </div>
+          </div>
         </div>
       </div>
       {/* ===================== Platform Medsos ===================== */}
       <div className="container mx-auto flex flex-col items-center justify-center my-10">
         <h1 className="font-bold text-2xl text-dark">Platform Media Sosial</h1>
         <div className="medsos flex mt-5" >
-          <img className="mx-10" width={203} height={56.71} src={'/assets/img/ict-yt.png'} alt="youtube" />
+          {/* <img className="mx-10" width={203} height={56.71} src={'/assets/img/ict-yt.png'} alt="youtube" />
           <img className="mx-10" width={214} height={60} src={'/assets/img/ict-fb.png'} alt="facebook" />
           <img className="mx-10" width={155} height={64} src={'/assets/img/ict-tiktok.png'} alt="tiktok" />
-          <img className="mx-10" width={223} height={56.71} src={'/assets/img/ict-ig.png'} alt="instagram" />
+          <img className="mx-10" width={223} height={56.71} src={'/assets/img/ict-ig.png'} alt="instagram" /> */}
         </div>
       </div>
       {/* ===================== Carousel ===================== */}
@@ -83,7 +88,6 @@ export const Main: React.FC = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide><div className="bg-no-repeat bg-cover w-full h-96 rounded-md" style={{ backgroundImage: `url('/assets/img/banner.svg')` }}></div></SwiperSlide>
         </Swiper>
       </div>
     </div>
