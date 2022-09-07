@@ -1,18 +1,14 @@
 import React, { useRef } from "react";
 
 import Image from "next/image";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import { Pagination } from 'swiper';
 import { Button } from "@components";
 import { useDispatch, useSelector } from "react-redux";
 import { decrease, increase } from "@redux/actions";
 import { useRouter } from "next/router";
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"
 
 // interface RootState {
 //   counter: { count: number }
@@ -71,13 +67,10 @@ export const Main: React.FC = () => {
       </div>
       {/* ===================== Carousel ===================== */}
       <div className="container mx-auto mb-96 mt-28">
-        <Swiper style={{
-          "--swiper-pagination-color": "#fff"
-        }}
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+        <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper: any) => console.log(swiper)}
         >
