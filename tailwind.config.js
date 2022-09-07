@@ -18,12 +18,13 @@ module.exports = {
       margin: {
         '35px': '35px',
         '28px': '28px',
-      }
-    },
-    fontSize: {
-      '22px': '22px',
-      '18px': '18px',
-      '12px': '12px',
+      },
+      fontSize: {
+        '22px': '22px',
+        '18px': '18px',
+        '12px': '12px',
+        'xs': '.75rem'
+      },
     },
     screens: {
       'xs': '375px',

@@ -34,25 +34,25 @@ export const Main: React.FC = () => {
     <div className="bg-background" style={{ backgroundColor: 'wheat' }}>
       <div className="w-full h-700px bg-no-repeat bg-cover" style={{ backgroundImage: `url('/assets/img/bg-header.png')` }}>
         <div className="container mx-auto flex justify-between lg:w-11/12 pt-20" >
-          <div className="flex items-center lg:p-0 md:w-96 lg:w-6/12  md:p-16">
+          <div className="flex items-center lg:p-0 md:w-96 sm:w-6/12  lg:w-6/12  md:pl-16 sm:pl-16">
             <div className="content">
-              <h1 className="text-4xl md:text-22px font-bold text-dark">Social Media Academy</h1>
-              <h3 className="text-2xl md:text-18px font-medium text-dark mt-3">Berkarir Sebagai Konten Kreator
+              <h1 className="lg:text-4xl md:text-22px font-bold text-dark">Social Media Academy</h1>
+              <h3 className="lg:text-2xl md:text-18px font-medium text-dark mt-3">Berkarir Sebagai Konten Kreator
                 Di Semua Platform.</h3>
-              <p className="text-mute text-sm mt-35px md:text-12px">Teknologilah yang bisa memberikan dampak sosial terbesar
+              <p className="text-mute lg:text-sm mt-35px md:text-12px sm:text-12px">Teknologilah yang bisa memberikan dampak sosial terbesar
                 di negara ini, bukan kebijakan atau policy.    - Nadiem Makarim</p>
               <div className="c-button mt-28px md:flex ">
-                <Button className="bg-primary mr-2 md:text-12px hover:bg-primary-dark text-white px-5 md:px-3 py-1 rounded border-2 border-primary duration-75">
+                <Button className="bg-primary mr-2 md:text-12px sm:text-12px lg:text-18px hover:bg-primary-dark text-white lg:px-5 md:px-3 sm:px-3 sm:mb-2 py-1 rounded border-2 border-primary duration-75">
                   Daftar Sekarang
                 </Button>
-                <Button className="px-5 md:px-3 py-1  md:text-12px rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
+                <Button className="lg:px-5 md:px-3 sm:mb-2 sm:px-3 py-1  md:text-12px sm:text-12px lg:text-18px rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
                   Selengkapnya
                 </Button>
               </div>
             </div>
           </div>
           {/* <Image src="/assets/img/bg-img.png" alt="nextjs" width="520" height="520" /> */}
-          <div className="content-image md:w-96 lg:w-6/12 flex justify-between">
+          <div className="content-image md:w-96 sm:w-6/12  lg:w-6/12 flex justify-between">
             <span></span>
             <div className="p-16">
               <img src={"/assets/img/bg-img.png"} className="w-full" alt="..." />
