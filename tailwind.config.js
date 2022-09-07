@@ -9,6 +9,7 @@ module.exports = {
       'disabled': '#B5B8C2',
       'dark': '#0A0E0E',
       'mute': '#8D8D8D',
+      'background': '#F8F7F3',
     },
     extend: {
       height: {

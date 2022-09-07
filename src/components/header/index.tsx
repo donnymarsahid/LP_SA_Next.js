@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
     });
   }
   return (
-    <div className={`fixed top-0 left-0 right-0 ${scroll ? 'shadow-md bg-white' : ''}`}>
+    <div className={`z-10 fixed top-0 left-0 right-0 ${scroll ? 'shadow-md bg-white' : 'bg-background'}`}>
       <div className="container mx-auto p-4 lg:flex justify-between">
         <Logo />
         <div className="link-navbar lg:ml-10 flex items-center">
