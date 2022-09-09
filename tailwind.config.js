@@ -3,6 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      width: {
+        '183': '183px',
+        '194': '194px',
+        '135': '135px',
+        '203': '203px'
+      },
       height: {
         '700px': '700px',
       },
@@ -27,7 +33,9 @@ module.exports = {
       },
     },
     screens: {
-      'xs': '375px',
+      'xs': '320px',
+      // => @media (min-width: 320px) { ... } 
+      's': '375px',
       // => @media (min-width: 375px) { ... } 
       'sm': '640px',
       // => @media (min-width: 640px) { ... }

@@ -31,10 +31,10 @@ export const Main: React.FC = () => {
 
 
   return (
-    <div className="bg-background" style={{ backgroundColor: 'wheat' }}>
+    <div className="bg-background">
       <div className="w-full h-700px bg-no-repeat bg-cover" style={{ backgroundImage: `url('/assets/img/bg-header.png')` }}>
-        <div className="container mx-auto flex justify-between lg:w-11/12 pt-20" >
-          <div className="flex items-center lg:p-0 md:w-96 sm:w-6/12  lg:w-6/12  md:pl-16 sm:pl-16">
+        <div className="container mx-auto flex  md:flex-row lg:flex-row sm:flex-row justify-between lg:w-11/12 pt-20 xs:flex xs:flex-col-reverse" >
+          <div className="flex items-center lg:p-0 md:w-96 sm:w-6/12  lg:w-6/12  md:pl-16 sm:pl-16  px-3">
             <div className="content">
               <h1 className="lg:text-4xl md:text-22px font-bold text-dark">Social Media Academy</h1>
               <h3 className="lg:text-2xl md:text-18px font-medium text-dark mt-3">Berkarir Sebagai Konten Kreator
@@ -42,20 +42,20 @@ export const Main: React.FC = () => {
               <p className="text-mute lg:text-sm mt-35px md:text-12px sm:text-12px">Teknologilah yang bisa memberikan dampak sosial terbesar
                 di negara ini, bukan kebijakan atau policy.    - Nadiem Makarim</p>
               <div className="c-button mt-28px md:flex ">
-                <Button className="bg-primary mr-2 md:text-12px sm:text-12px lg:text-18px hover:bg-primary-dark text-white lg:px-5 md:px-3 sm:px-3 sm:mb-2 py-1 rounded border-2 border-primary duration-75">
+                <Button className="bg-primary mr-2 xs:p-1 md:text-12px sm:text-12px lg:text-18px hover:bg-primary-dark text-white lg:px-5 md:px-3 sm:px-3 sm:mb-2 py-1 rounded border-2 border-primary duration-75">
                   Daftar Sekarang
                 </Button>
-                <Button className="lg:px-5 md:px-3 sm:mb-2 sm:px-3 py-1  md:text-12px sm:text-12px lg:text-18px rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
+                <Button className="lg:px-5 md:px-3 sm:mb-2 xs:p-1 sm:px-3 py-1  md:text-12px sm:text-12px lg:text-18px rounded border-2 border-primary text-primary hover:bg-primary hover:text-white duration-75">
                   Selengkapnya
                 </Button>
               </div>
             </div>
           </div>
           {/* <Image src="/assets/img/bg-img.png" alt="nextjs" width="520" height="520" /> */}
-          <div className="content-image md:w-96 sm:w-6/12  lg:w-6/12 flex justify-between">
+          <div className="content-image md:w-96 sm:w-6/12  lg:w-6/12 flex xs:flex-col justify-between xs:justify-center">
             <span></span>
-            <div className="p-16">
-              <img src={"/assets/img/bg-img.png"} className="w-full" alt="..." />
+            <div className="p-16 xs:p-8 xs:flex xs:justify-center">
+              <img src={"/assets/img/bg-img.png"} className="w-full xs:w-3/4" alt="..." />
             </div>
           </div>
         </div>
@@ -63,15 +63,15 @@ export const Main: React.FC = () => {
       {/* ===================== Platform Medsos ===================== */}
       <div className="container mx-auto flex flex-col items-center justify-center my-10">
         <h1 className="font-bold text-2xl text-dark">Platform Media Sosial</h1>
-        <div className="medsos flex mt-5" >
-          {/* <img className="mx-10" width={203} height={56.71} src={'/assets/img/ict-yt.png'} alt="youtube" />
-          <img className="mx-10" width={214} height={60} src={'/assets/img/ict-fb.png'} alt="facebook" />
-          <img className="mx-10" width={155} height={64} src={'/assets/img/ict-tiktok.png'} alt="tiktok" />
-          <img className="mx-10" width={223} height={56.71} src={'/assets/img/ict-ig.png'} alt="instagram" /> */}
+        <div className="medsos flex mt-5 md:flex-row lg:flex-row sm:flex-row xs:flex-col" >
+          <img className="md:mx-10 lg:mx-10 sm:mx-10 xs:mt-5 mt-3 lg:w-183 md:w-28 sm:w-20 xs:w-44  " src={'/assets/img/ict-yt.png'} alt="youtube" />
+          <img className="md:mx-10 lg:mx-10 sm:mx-10 xs:mt-5 mt-3 lg:w-194 md:w-28 sm:w-20 xs:w-44  " src={'/assets/img/ict-fb.png'} alt="facebook" />
+          <img className="md:mx-10 lg:mx-10 sm:mx-10 xs:mt-5 mt-3 lg:w-135 md:w-28 sm:w-20 xs:w-44  " src={'/assets/img/ict-tiktok.png'} alt="tiktok" />
+          <img className="md:mx-10 lg:mx-10 sm:mx-10 xs:mt-5 mt-3 lg:w-203 md:w-28 sm:w-20 xs:w-44  " src={'/assets/img/ict-ig.png'} alt="instagram" />
         </div>
       </div>
       {/* ===================== Carousel ===================== */}
-      <div className="container mx-auto mb-96 mt-28">
+      <div className="lg:container lg:mx-auto mb-96 mt-28 lg:w-11/12">
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
